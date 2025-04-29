@@ -1,0 +1,23 @@
+.page-container {
+  border:solid 1px rgb(179, 179, 179);
+  padding:0.6vw;
+  justify-content:center;
+  text-align:Center;
+  display:flex;
+  align-items:center;
+  height:20px;
+  width:20px;
+  color:#1467bd;
+}
+
+.blue {
+  background-color:#759fed;
+  color:white;
+}
+
+.noborderleft {
+  border-left:0;
+}
+.noborderlright {
+  border-right: 0;
+}

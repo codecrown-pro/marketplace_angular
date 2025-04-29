@@ -1,0 +1,143 @@
+.card-container {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  width:27vw;
+  border-radius:0.4vw;
+  box-shadow: 0vw 0vw 0.1vw 0.13vw#e5e5e5;
+  margin-top:1vw;
+  contain:content;
+  flex-grow:1;
+}
+
+.upper-card {
+  display:flex;
+  width:100%;
+  flex-direction:column;
+  justify-content:flex-start;
+  margin-top:1vw;
+}
+
+.title {
+  background-color: #343434;
+  color:#EBEBEB;
+  margin-bottom:1vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow:hidden;
+  width:100%;
+  padding:0.5vw;
+  font-size:1.2rem;
+  font-weight:700;
+}
+
+.preview-container {
+  display:flex;
+  justify-content:center;
+}
+
+
+.preview-container img {
+  width:100%;
+  height:25vw;
+  object-fit:contain;
+  align-self:center;
+}
+
+.lower-card {
+  margin-left: 1vw;
+}
+.small-info {
+  display:flex;
+  flex-direction:row;
+  column-gap:2vw;
+  font-style:italic;
+  font-size:0.9rem;
+  color:#afafaf;
+  padding-bottom:0.9vw;
+  padding-top:0.9vw;
+}
+
+.user {
+
+}
+
+.published-on {
+
+}
+
+.description {
+  margin-bottom:0.8vw;
+  height:7vw;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  padding-right:0.7vw;
+}
+
+.category {
+  background:#006966;
+  width:8vw;
+  margin-left:auto;
+  text-align:center;
+  color:#ffffff;
+  padding-top:0.3vw;
+  padding-bottom:0.3vw;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card-container {
+    width:43vw;
+  }
+  .preview-container img {
+    height:45vw;
+  }
+
+  .lower-card {
+    margin-left:2vw;
+  }
+
+  .description {
+    height:24vw;
+    padding-right:1.2vw;
+  }
+
+  .category {
+    padding-top:1vw;
+    padding-bottom:1vw;
+    width:16vw;
+  }
+  .title {
+    font-size:1.1rem;
+    padding:1.2vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-container {
+    width:80vw;
+    margin-bottom:10vw;
+  }
+
+  .preview-container img {
+    height:65vw;
+  }
+
+  .lower-card {
+    margin-left:4vw;
+  }
+
+  .description {
+    height:18vw;
+    padding-right:5vw;
+  }
+
+  .category {
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    width: 33vw;
+  }
+  .title {
+    font-size: 1.5rem;
+    padding: 3vw;
+  }
+}

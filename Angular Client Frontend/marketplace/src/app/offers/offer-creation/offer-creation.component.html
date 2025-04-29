@@ -1,0 +1,27 @@
+<form class="offer-form" #createoffer="ngForm" (ngSubmit)="offerSubmit(createoffer.value)">
+<h3>Post new offer</h3>
+<div class="form-group">
+  <label for="title">Title</label>
+  <input id="title" class="" placeholder="Title" name="title" ngModel />
+</div>
+<div class="form-group">
+  <label for="picture-url">Picture URL</label>
+  <input id="picture-url" placeholder="offers/iphone.jpg" name="pictureUrl" ngModel/>
+</div>
+<div class="form-group">
+  <label for="description">Description</label>
+  <textarea id="description" class="" placeholder="Description" rows="5" name="description" ngModel ></textarea>
+</div>
+<div class="form-group">
+  <label for="location">Location</label>
+  <input id="location" class="" placeholder="Country, city, neighborhood, the office, my desk, etc..." name="location" ngModel />
+</div>
+<div class="form-group">
+  <label for="category">Category</label>
+  <select id="category" class="" name="category" ngModel>
+    <option selected default>Please select...</option>
+    <option *ngFor="let item of categories">{{item.name}}</option>
+  </select>
+</div>
+<button type="submit" class="offer-submit-button">Submit</button>
+</form>
