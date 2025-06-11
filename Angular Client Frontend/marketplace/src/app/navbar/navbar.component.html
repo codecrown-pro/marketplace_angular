@@ -1,0 +1,25 @@
+<div class="navbar">
+  <div class="leftnavcontainer">
+
+  <a routerLink="/list"><div class="logo">Online Marketplace</div></a>
+
+  <div class="navigation">
+    <ul>
+      <li *ngFor="let item of navMenu">
+        <a routerLink="{{item.path}}">{{item.text}}</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div (click)="toggleHamburger()" class="hamburger"></div>
+  <div class="user"><ng-container *ngIf="userLoggedIn; else noUser"><div (click)="logout()">Logout</div><div>{{user.username}}</div></ng-container><ng-template #noUser><a routerLink="{{login.path}}">{{login.text}}</a></ng-template></div>
+</div>
+<div class="hamburgerMenu" [hidden]="showHam">
+  <div class="closer" (click)="toggleHamburger()">X</div>
+  <ul class="hamburgerSecondary">
+    <li *ngFor="let item of navMenu">
+      <a routerLink="{{item.path}}" (click)="toggleHamburger()">{{item.text}}</a>
+    </li>
+  </ul>
+
+</div>

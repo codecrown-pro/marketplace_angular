@@ -1,0 +1,10 @@
+
+<a routerLink="/list/{{decNav()}}" *ngIf="model.pageNumber == 1 && pageService.currentIndex != 1 && pageService.currentIndex != 0"><div class="page-container" [class.noborderlright]="1==1"><<</div></a>
+
+<a routerLink="/list/{{model.pageNumber}}"><div class="page-container" [class.blue]="model.blueFlag == true" [class.noborderleft]="model.pageNumber > 1">{{model.pageNumber}}</div></a>
+
+<a routerLink="/list/{{incNav()}}"
+  *ngIf="model.pageNumber == pageService.totalPages && pageService.currentIndex != pageService.totalPages">
+  <div class="page-container" [class.noborderleft]="model.pageNumber > 1">
+    >> </div>
+</a>

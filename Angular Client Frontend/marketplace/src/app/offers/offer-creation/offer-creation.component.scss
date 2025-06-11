@@ -1,0 +1,56 @@
+.offer-form {
+  display:flex;
+  flex-direction:column;
+  margin:0 auto;
+  width:40%;
+}
+
+.form-group {
+  display:flex;
+  flex-direction:column;
+  margin:1vw;
+}
+
+.form-group label {
+  font-weight:700;
+  padding-bottom:0.4vw;
+}
+
+.offer-submit-button {
+  align-self:center;
+  width:8vw;
+  margin-left:1vw;
+  background-color: rgb(45, 89, 235);
+  border: solid 1px rgb(216, 216, 226);
+  border-radius: 0.3vw;
+  padding: 0.3vw;
+  color: #f7f7f7;
+}
+
+input {
+  height:2vw;
+  padding:0.4vw;
+  border-radius: 0.5vw;
+  border:solid 1px rgb(107, 107, 107);
+}
+
+textarea {
+  padding:0.4vw;
+  border-radius: 0.5vw;
+  border: solid 1px rgb(107, 107, 107);
+}
+
+select, option {
+  height: 2vw;
+  padding: 0.4vw;
+  border-radius: 0.5vw;
+  border: solid 1px rgb(107, 107, 107);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+  
+}

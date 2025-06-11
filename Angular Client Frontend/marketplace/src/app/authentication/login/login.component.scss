@@ -1,0 +1,33 @@
+.login-form {
+  width:20%;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  margin-top:2vw;
+}
+
+.login-form label {
+  font-weight:700;
+  padding-bottom:0.4vw;
+}
+
+.login-form input {
+  border-radius:0.2vw;
+  border:solid 1px black;
+  padding:0.3vw;
+}
+
+.login-submit {
+  width:40%;
+  align-self:center;
+  margin-top:1vw;
+  background-color:rgb(45, 89, 235);
+  border:solid 1px rgb(216, 216, 226);
+  border-radius:0.3vw;
+  padding:0.3vw;
+  color:#f7f7f7;
+}
+
+.login-bar {
+  height:2vw;
+}

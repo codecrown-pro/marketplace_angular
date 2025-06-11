@@ -1,0 +1,23 @@
+<div class="card-container">
+  <div class="upper-card">
+    <div class="title">
+      {{offer.title}}
+    </div>
+    <div class="preview-container"><img src="assets/{{offer.pictureUrl}}" class="ttt" alt="offer-image" /></div>
+  
+  </div>
+  <div class="lower-card">
+    <div class="small-info">
+      <div class="user"><!-- TODO: Fetch the corresponding username: in client or rework DB model on the API; performance-->
+        {{offer.userId}}
+      </div>
+      <div class="published-on">
+        {{offer.publishedOn.split('T')[0].toString()}}
+      </div>
+    </div>
+    <div class="description">{{offer.description}}</div>
+    <div class="category">{{offer.categoryId}}</div>
+  </div>
+
+</div>
+

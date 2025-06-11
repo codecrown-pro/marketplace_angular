@@ -1,0 +1,48 @@
+
+
+.list-children {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:2vw;
+  border: solid 0px black;
+  flex-wrap: wrap;
+  margin-bottom:2vw;
+  
+}
+
+.pagination-container {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-bottom:2vw;
+}
+
+.flex {
+  display:flex;
+  flex-direction:row;
+}
+
+.first {
+  width:85.6%;
+  display:flex;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .first {
+    all:unset;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .list-children {
+    flex-direction:column;
+    align-items:center;
+  }
+    .first {
+      all: unset;
+    }
+}

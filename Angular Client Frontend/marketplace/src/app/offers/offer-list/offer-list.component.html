@@ -1,0 +1,8 @@
+<div class="list-container">
+  <div class="list-children">
+    <app-offer-item *ngFor="let item of currentOffers; trackBy: onUpdate; let index = index" [class.first]="index==0" [offer]="item"></app-offer-item>
+  </div>
+</div>
+<div class="pagination-container">
+<app-pagination *ngFor="let page of paginationModels; trackBy: onUpdatePage" [model]="page" class="flex"></app-pagination>
+</div>
